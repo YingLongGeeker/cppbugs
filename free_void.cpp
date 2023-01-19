@@ -26,7 +26,7 @@ void ShowData(void* data, size_t cnt) {
         std::cout << "data.value:" << ptrTmp->value << std::endl;
     }
 
-    //free(data); // NOTE: mem leak. should use delete [](Data*)data;
+    free(data); // NOTE: mem leak. should use delete [](Data*)data;
 }
 
 int main(int argc, char* argv[]) {
